@@ -30,7 +30,7 @@ const HeroSection = () => {
                         />
                     </h1>
                     <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-                        Other text, or less description
+                        Other text, or less description ajsdkajsdlkajd alsdjalksdj akdj alskdjals djklasdj lkasjdkasjd alskdjalksjd asd
                     </p>
                     <div>
                         <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-green-500 via-cyan-500 to-blue-500 hover:bg-slate-200 text-white">Hire Me</button>
