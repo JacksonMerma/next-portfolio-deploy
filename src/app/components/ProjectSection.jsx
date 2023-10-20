@@ -1,5 +1,7 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
 import ProjectCard from './ProjectCard'
+import ProjectTag from './ProjectTag';
 
 const projectsData = [
     {
@@ -16,28 +18,34 @@ const projectsData = [
         title: "Unu Map",
         description: "Unu Map description",
         image: "/images/projects/unuMap.png",
-        tag: ["All", "Web"],
+        tag: ["All"],
         gitUrl: "/",
         previewUrl: "/",
     },
 ]
 
 const ProjectSection = () => {
+    const [tag, setTag] = useState("All");
+
+    const handleTabChange = (newTag) => {
+        setTag(newTag);
+    };
+
+    const filteredProjects = projectsData.filter((project) =>
+        project.tag.includes(tag)
+    );
+
     return (
         <section id='projects'>
             <h2 className='text-center text-4xl fon-bold text-white mt-4 mb-8 md:mb-12'>
                 My Projects
             </h2>
             <div className='text-white flex flex-row justify-center items-center gap-2 py-6'>
-                <button className='rounded-full border-2 border-green-500 px-6 py-3 text-xl cursor-pointer'>
-                    All
-                </button>
-                <button className='rounded-full border-2 border-slate-600 hover:border-white px-6 py-3 text-xl cursor-pointer'>
-                    Web
-                </button>
+                <ProjectTag onClick={handleTabChange} name="All" isSelected={tag === "All"} />
+                <ProjectTag onClick={handleTabChange} name="Web" isSelected={tag === "Web"} />
             </div>
             <div className="grid md:grid-cols-3 gap-8 md:gap-12">
-                {projectsData.map((project) =>
+                {filteredProjects.map((project) =>
                     <ProjectCard
                         key={project.id}
                         title={project.title}
