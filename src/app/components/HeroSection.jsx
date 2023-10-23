@@ -3,8 +3,20 @@ import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
+import useDownloader from "react-use-downloader";
 
 const HeroSection = () => {
+
+    const { size, elapsed, percentage, download,
+        cancel, error, isInProgress } = useDownloader();
+
+    const fileUrl = "/files/CV.pdf";
+    const fileName = "CV.pdf";
+
+    const handleHireMe = () => {
+        window.location.href = "https://www.linkedin.com/in/jackson-fernando-merma-portocarrero-284337214/"
+    };
+
     return (
         <section className="lg:py-16">
             <div className="grid grid-cols-1 sm:grid-cols-12">
@@ -38,8 +50,16 @@ const HeroSection = () => {
                         Other text, or less description ajsdkajsdlkajd alsdjalksdj akdj alskdjals djklasdj lkasjdkasjd alskdjalksjd asd
                     </p>
                     <div>
-                        <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-green-500 via-cyan-500 to-blue-500 hover:bg-slate-200 text-white">Hire Me</button>
-                        <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-green-500 via-cyan-500 to-blue-500 hover:bg-slate-800 text-white mt-3">
+                        <button
+                            className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-green-500 via-cyan-500 to-blue-500 hover:bg-slate-200 text-white"
+                            onClick={handleHireMe}
+                        >
+                            Hire Me
+                        </button>
+                        <button
+                            className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-green-500 via-cyan-500 to-blue-500 hover:bg-slate-800 text-white mt-3"
+                            onClick={() => download(fileUrl, fileName)}
+                        >
                             <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                                 Download CV
                             </span>
