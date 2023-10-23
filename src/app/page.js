@@ -6,6 +6,7 @@ import ProjectSection from './components/ProjectSection'
 import EmailSection from './components/EmailSection'
 import Footer from './components/Footer'
 import AchievementsSection from './components/AchievementsSection'
+import { ToastContainer } from 'react-toastify'
 
 export default function Home() {
   return (
@@ -17,6 +18,10 @@ export default function Home() {
         <AboutSection />
         <ProjectSection />
         <EmailSection />
+        <ToastContainer
+          position='bottom-right'
+          theme='dark'
+        />
       </div>
       <Footer />
     </main>
