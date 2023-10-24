@@ -38,10 +38,10 @@ const EmailSection = () => {
     return (
         <section id='contact' className='grid my-12 md:my-12 py-24 gap-4'>
             <div className='z-10'>
-                <h5 className='text-xl font-bold text-white my-2'>Let's Connect</h5>
+                <h5 className='text-xl font-bold text-white my-2'>Let&apos;s Connect</h5>
                 <p className='text-[#ADB7BE] mb-4'>
                     {" "}
-                    I'm currently loking for new opportunities, my inbox is always open.
+                    I&apos;m currently loking for new opportunities, my inbox is always open.
                     Whether you have a question or just want to say hi.
                 </p>
                 <div className='socials flex flex-row gap-2 '>
