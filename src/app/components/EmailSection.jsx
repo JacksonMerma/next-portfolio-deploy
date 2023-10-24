@@ -6,35 +6,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 const EmailSection = () => {
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        const data = {
-            email: e.target.email.value,
-            subject: e.target.subject.value,
-            message: e.target.message.value,
-        };
-        const JSONdata = JSON.stringify(data);
-        const endpoint = "/api/send";
-        const options = {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSONdata,
-        }
-
-        try {
-            const response = await fetch(endpoint, options);
-            const json = await response.json();
-            console.log(json);
-        } catch (err) {
-            console.error(err);
-        }
-
-        if (response.status === 200) {
-            console.log("Message sent.");
-        }
-    };
     return (
         <section id='contact' className='grid my-12 md:my-12 py-24 gap-4'>
             <div className='z-10'>
