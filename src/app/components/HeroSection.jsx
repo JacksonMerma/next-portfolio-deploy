@@ -47,7 +47,7 @@ const HeroSection = () => {
                         />
                     </h1>
                     <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-                        Other text, or less description ajsdkajsdlkajd alsdjalksdj akdj alskdjals djklasdj lkasjdkasjd alskdjalksjd asd
+                        I'm a passionate programmer with 4 years of experience. I have a strong interest in areas sach as <strong>data science</strong>, <strong>backend development</strong>, <strong>algorithm development</strong>, <strong>AR/VR development</strong>, <strong>competitive programming</strong>, and others. I'm committed to continually pushing the boundaries of technology and contributing to the growth of the software industry.
                     </p>
                     <div>
                         <button

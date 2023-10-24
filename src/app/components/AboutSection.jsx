@@ -56,11 +56,13 @@ const AboutSection = () => {
                 <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
                     <h2 className='text-4xl fond-bold text-white mb-4'>About Me</h2>
                     <p className='text-base lg:text-lg'>
-                        alskdjaskdjaskalskdjkajd aslkdja dkjsdkjsl dkjksjdlka sdlkjadjs kljalksjd akjs
-                        asdjklajsdkjaksalsdja laksjdka sdlkjaslkdjalksjd k asdjaksdjalsdjk laksjdkajaslkdj
-                        asdjklajsdkjaksalsdja laksjdka sdlkjaslkdjalksjd k asdjaksdjalsdjk laksjdkajaslkdj
-                        asdjklajsdkjaksalsdja laksjdka sdlkjaslkdjalksjd k asdjaksdjalsdjk laksjdkajaslkdj
-                        asdjklajsdkjaksalsdja laksjdka sdlkjaslkdjalksjd k asdjaksdjalsdjk laksjdkajaslkdj
+                        I'm a passionate programmer with 4 years of experience. I have a strong interest in areas sach as <strong>data science</strong>, <strong>backend development</strong>, <strong>algorithm development</strong>, <strong>AR/VR development</strong>, <strong>competitive programming</strong>, and others. I'm committed to continually pushing the boundaries of technology and contributing to the growth of the software industry.
+                        <br/><br/>
+                        Currently, I'm a part of the team at 
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-cyan-500">
+                        <a href='https://herostartup.com/'><strong> Hero Startup</strong></a>
+                        </span>
+                        , where I've gained valuable experience and had the opportunity to contribute to the project's success. However, my curiosity and desire for learning drive me to explore even further in the software industry and tackle exciting challenges in the future.
                     </p>
                     <div className='flex flex-row justify-start mt-8'>
                         <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>
