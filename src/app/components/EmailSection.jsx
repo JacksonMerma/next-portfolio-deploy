@@ -42,8 +42,7 @@ const EmailSection = () => {
                 <p className='text-[#ADB7BE] mb-4'>
                     {" "}
                     I'm currently loking for new opportunities, my inbox is always open.
-                    Whether you have a question or just want to say hi kasdjlkasjd
-                    alskdjak kasjdklaj kajsdlk!
+                    Whether you have a question or just want to say hi.
                 </p>
                 <div className='socials flex flex-row gap-2 '>
                     <Link href="https://github.com/JackMerma">
