@@ -6,42 +6,13 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 const EmailSection = () => {
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        const data = {
-            email: e.target.email.value,
-            subject: e.target.subject.value,
-            message: e.target.message.value,
-        };
-        const JSONdata = JSON.stringify(data);
-        const endpoint = "/api/send";
-        const options = {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSONdata,
-        }
-
-        try {
-            const response = await fetch(endpoint, options);
-            const json = await response.json();
-            console.log(json);
-        } catch (err) {
-            console.error(err);
-        }
-
-        if (response.status === 200) {
-            console.log("Message sent.");
-        }
-    };
     return (
         <section id='contact' className='grid my-12 md:my-12 py-24 gap-4'>
             <div className='z-10'>
-                <h5 className='text-xl font-bold text-white my-2'>Let's Connect</h5>
+                <h5 className='text-xl font-bold text-white my-2'>Let&apos;s Connect</h5>
                 <p className='text-[#ADB7BE] mb-4'>
                     {" "}
-                    I'm currently loking for new opportunities, my inbox is always open.
+                    I&apos;m currently loking for new opportunities, my inbox is always open.
                     Whether you have a question or just want to say hi.
                 </p>
                 <div className='socials flex flex-row gap-2 '>
