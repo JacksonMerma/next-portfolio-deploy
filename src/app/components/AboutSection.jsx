@@ -84,7 +84,7 @@ const AboutSection = () => {
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-green-500">
                             <a href='https://herostartup.com/'><strong> Hero Startup</strong></a>
                         </span>
-                        , where I have gained valuable experience and had the opportunity to contribute to the project&apos;s success. However, my curiosity and desire for learning drive me to explore even further in the software industry and tackle exciting challenges in the future.
+                        , where I&apos;ve gained valuable experience and had the opportunity to contribute to the project&apos;s success. However, my curiosity and desire for learning drive me to explore even further in the software industry and tackle exciting challenges in the future.
                     </p>
                     <div className='flex flex-row justify-start mt-8'>
                         <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>

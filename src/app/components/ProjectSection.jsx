@@ -7,13 +7,13 @@ import { motion, useInView } from "framer-motion";
 
 const projectsData = [
     {
-        id: 1,
-        title: "Chess Game",
-        description: "The chess game is a virtual platform that is part of a variety of games. Its purpose is to reinforce programming knowledge in Python through challenges in which users can solve problems to achieve the visualization of the pieces involved in these challenges. This platform has a look and mechanisms very similar to platforms like LeetCode, CodeChef, CodeForces, among others.",
-        image: "/images/projects/chess-game.png",
+        id: 2,
+        title: "Conway's Game of Life",
+        description: "Conway's Game of Life is an informative and inspirational project that explores the fascinating world of cellular automata. This project includes both 2D and 3D versions of the game, offering a unique and engaging perspective on emergent phenomena and computational experimentation. It invites exploration, creativity, and a deeper understanding of self-organizing systems, making it a valuable addition to the world of computer science and simulation.",
+        image: "/images/projects/game-of-life.png",
         tag: ["All", "Web"],
-        gitUrl: "https://github.com/JackMerma/gamesProject",
-        previewUrl: "/",
+        gitUrl: "https://github.com/JackMerma/game-of-life",
+        previewUrl: "https://conways-game-of-life-in-3d.vercel.app/",
     },
     {
         id: 2,
@@ -22,7 +22,16 @@ const projectsData = [
         image: "/images/projects/unuMap.png",
         tag: ["All", "Web"],
         gitUrl: "https://github.com/DarwinJesusNeiraC/hackatonNasa",
-        previewUrl: "/",
+        previewUrl: "null",
+    },
+    {
+        id: 1,
+        title: "Chess Game",
+        description: "The chess game is a virtual platform that is part of a variety of games. Its purpose is to reinforce programming knowledge in Python through challenges in which users can solve problems to achieve the visualization of the pieces involved in these challenges. This platform has a look and mechanisms very similar to platforms like LeetCode, CodeChef, CodeForces, among others.",
+        image: "/images/projects/chess-game.png",
+        tag: ["All", "Web"],
+        gitUrl: "https://github.com/JackMerma/gamesProject",
+        previewUrl: "null",
     },
 ]
 
