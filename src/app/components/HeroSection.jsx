@@ -10,8 +10,8 @@ const HeroSection = () => {
     const { size, elapsed, percentage, download,
         cancel, error, isInProgress } = useDownloader();
 
-    const fileUrl = "/files/CV.pdf";
-    const fileName = "CV.pdf";
+    const fileUrl = "/files/Jackson-Merma.pdf";
+    const fileName = "Jackson-Merma.pdf";
 
     const handleHireMe = () => {
         window.location.href = "https://www.linkedin.com/in/jackson-fernando-merma-portocarrero-284337214/"

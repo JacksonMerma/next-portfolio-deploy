@@ -9,13 +9,14 @@ const TAB_DATA = [
         id: "skills",
         content: (
             <ul className='list-disc pl-2'>
-                <li>Data structures and algorithms</li>
+			  		 <li>Java, C/C++, Python, C#, JavaScript, SQL, MySQL, Angular, Node.js</li>
+			  		 <li>Django, Unity, React, JUnit, Selenium, PyTest</li>
                 <li>Machine Learning, Neural Networks, Data Analysis</li>
-                <li>Java, C/C++, Python, C#, JavaScript, Perl, Bash Script</li>
+                <li>Data structures and algorithms</li>
                 <li>Git, GitHub, GitLab</li>
                 <li>Linux, Google Colaboratory</li>
-                <li>Vim/nvim</li>
                 <li>Competitive Programming</li>
+			   	 <li>Basic understanding of cybersecurity principles</li>
                 <li>English (intermediate level)</li>
             </ul>
         )
@@ -34,16 +35,12 @@ const TAB_DATA = [
         id: "certifications",
         content: (
             <ul className='list-disc pl-2'>
-                <li>NASA International Space Apps Challenge 2023 certification</li>
-                <li>Meta Hacker Cup 2023 -
-                    recognition for progressing to
-                    Round 1</li>
+                <li>Top 50 Argeniss Codeclash - Beecrowd 2023</li>
+                <li>NASA International Space Apps Challenge 2023</li>
+                <li>Meta Hacker Cup 2023 - recognition for progressing to Round 1</li>
                 <li>Top 50 Argeniss Codeclash - Beecrowd 2022</li>
-                <li>4th place in competitive programming contest -
-                    Computer Science UNSA 2022</li>
-                <li>4th place in My first
-                    investigation - Catholic
-                    University of Santa Maria 2019</li>
+                <li>4th place in competitive programming contest - Computer Science UNSA 2022</li>
+                <li>4th place in My first investigation - Catholic University of Santa Maria 2019</li>
             </ul>
         )
     }
